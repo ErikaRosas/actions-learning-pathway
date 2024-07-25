@@ -2,6 +2,7 @@ name: build-test-deploy
 on: push
 jobs: 
   build:
+    needs: test
     runs-on: ubuntu-latest
     steps: 
       - name: checkout repo
